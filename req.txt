@@ -1,0 +1,6 @@
+pandas==2.3.0
+scikit-learn==1.7.1  # Updated to latest version with Python 3.13 support
+flask==3.0.3
+xgboost==2.1.1
+joblib==1.4.2
+numpy==1.26.4

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Crop Yield Predictor</h2>
+    <form id="predictForm" action="/predict" method="POST">
+        <input type="number" name="Year" placeholder="Year" required><br>
+        <input type="text" name="State" placeholder="State" required><br>
+        <input type="text" name="District" placeholder="District" required><br>
+        <input type="number" name="Area_1000_ha" placeholder="Area (1000 ha)" required><br>
+        <input type="text" name="Crop" placeholder="Crop" required><br>
+        <input type="number" name="Avg_Rainfall_mm" placeholder="Rainfall (mm)" required><br>
+        <input type="number" name="Avg_Temp_C" placeholder="Temp (°C)" required><br>
+        <input type="text" name="Soil_Type" placeholder="Soil Type" required><br>
+        <button type="submit">Predict</button>
+    </form>
+    <p id="result"></p>
+    <p id="conf"></p>
+    <p id="recs"></p>
+    <p id="message"></p>
+    <script>
+        document.getElementById('predictForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = Object.fromEntries(new FormData(e.target));
+                const response = await fetch('http://127.0.0.1:5000/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            const result = await response.json();
+            if (result.error) {
+                document.getElementById('result').innerText = `Error: ${result.error}`;
+                document.getElementById('conf').innerText = '';
+                document.getElementById('recs').innerText = '';
+                document.getElementById('message').innerText = '';
+            } else {
+                if (result.yield_kg_ha !== null) {
+                    document.getElementById('result').innerText = `Predicted Yield: ${result.yield_kg_ha} kg/ha`;
+                    document.getElementById('conf').innerText = `Confidence Interval (95%): ${result.confidence_interval_95[0]} - ${result.confidence_interval_95[1]} kg/ha`;
+                } else {
+                    document.getElementById('result').innerText = '';
+                    document.getElementById('conf').innerText = '';
+                }
+                document.getElementById('recs').innerText = result.recommendations ? `Recommendations: ${result.recommendations.join('; ')}` : '';
+                document.getElementById('message').innerText = result.message ? result.message : '';
+            }
+        });
+    </script>
+</body>
+</html>

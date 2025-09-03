@@ -1,0 +1,972 @@
+{
+    "Chhattisgarh": {
+        "Durg": [
+            "Red-Yellow"
+        ],
+        "Bastar": [
+            "Red-Yellow"
+        ],
+        "Raipur": [
+            "Red-Yellow"
+        ],
+        "Bilaspur": [
+            "Red-Yellow"
+        ],
+        "Raigarh": [
+            "Red-Yellow"
+        ],
+        "Surguja": [
+            "Red-Yellow"
+        ]
+    },
+    "Madhya Pradesh": {
+        "Jabalpur": [
+            "Black"
+        ],
+        "Balaghat": [
+            "Black"
+        ],
+        "Chhindwara": [
+            "Black"
+        ],
+        "Narsinghpur": [
+            "Black"
+        ],
+        "Seoni / Shivani": [
+            "Black"
+        ],
+        "Mandla": [
+            "Black"
+        ],
+        "Sagar": [
+            "Black"
+        ],
+        "Damoh": [
+            "Black"
+        ],
+        "Tikamgarh": [
+            "Black"
+        ],
+        "Chhatarpur": [
+            "Black"
+        ],
+        "Panna": [
+            "Black"
+        ],
+        "Rewa": [
+            "Black"
+        ],
+        "Sidhi": [
+            "Black"
+        ],
+        "Satna": [
+            "Black"
+        ],
+        "Shahdol": [
+            "Black"
+        ],
+        "Gwalior": [
+            "Black"
+        ],
+        "Shivpuri": [
+            "Black"
+        ],
+        "Guna": [
+            "Black"
+        ],
+        "Datia": [
+            "Black"
+        ],
+        "Morena": [
+            "Black"
+        ],
+        "Bhind": [
+            "Black"
+        ],
+        "Indore": [
+            "Black"
+        ],
+        "Ratlam": [
+            "Black"
+        ],
+        "Ujjain": [
+            "Black"
+        ],
+        "Mandsaur": [
+            "Black"
+        ],
+        "Dewas": [
+            "Black"
+        ],
+        "Dhar": [
+            "Black"
+        ],
+        "Jhabua": [
+            "Black"
+        ],
+        "Khargone / West Nimar": [
+            "Black"
+        ],
+        "Khandwa / East Nimar": [
+            "Black"
+        ],
+        "Sehore": [
+            "Black"
+        ],
+        "Raisen": [
+            "Black"
+        ],
+        "Vidisha": [
+            "Black"
+        ],
+        "Betul": [
+            "Black"
+        ],
+        "Rajgarh": [
+            "Black"
+        ],
+        "Shajapur": [
+            "Black"
+        ],
+        "Hoshangabad": [
+            "Black"
+        ]
+    },
+    "Andhra Pradesh": {
+        "Srikakulam": [
+            "Loamy"
+        ],
+        "Visakhapatnam": [
+            "Loamy"
+        ],
+        "East Godavari": [
+            "Loamy"
+        ],
+        "West Godavari": [
+            "Loamy"
+        ],
+        "Krishna": [
+            "Loamy"
+        ],
+        "Guntur": [
+            "Loamy"
+        ],
+        "S.P.S. Nellore": [
+            "Loamy"
+        ],
+        "Kurnool": [
+            "Loamy"
+        ],
+        "Ananthapur": [
+            "Loamy"
+        ],
+        "Kadapa YSR": [
+            "Loamy"
+        ],
+        "Chittoor": [
+            "Loamy"
+        ]
+    },
+    "Telangana": {
+        "Hyderabad": [
+            "Loamy"
+        ],
+        "Nizamabad": [
+            "Loamy"
+        ],
+        "Medak": [
+            "Loamy"
+        ],
+        "Mahabubnagar": [
+            "Loamy"
+        ],
+        "Nalgonda": [
+            "Loamy"
+        ],
+        "Warangal": [
+            "Loamy"
+        ],
+        "Khammam": [
+            "Loamy"
+        ],
+        "Karimnagar": [
+            "Loamy"
+        ],
+        "Adilabad": [
+            "Loamy"
+        ]
+    },
+    "Karnataka": {
+        "Bangalore": [
+            "Loamy"
+        ],
+        "Kolar": [
+            "Loamy"
+        ],
+        "Tumkur": [
+            "Loamy"
+        ],
+        "Mysore": [
+            "Loamy"
+        ],
+        "Mandya": [
+            "Loamy"
+        ],
+        "Hassan": [
+            "Loamy"
+        ],
+        "Shimoge": [
+            "Loamy"
+        ],
+        "Chickmagalur": [
+            "Loamy"
+        ],
+        "Chitradurga": [
+            "Loamy"
+        ],
+        "Bellary": [
+            "Loamy"
+        ],
+        "Dharwad": [
+            "Loamy"
+        ],
+        "Belgaum": [
+            "Loamy"
+        ],
+        "Bijapur / Vijayapura": [
+            "Loamy"
+        ],
+        "Bidar": [
+            "Loamy"
+        ],
+        "Raichur": [
+            "Loamy"
+        ],
+        "Gulbarga / Kalaburagi": [
+            "Loamy"
+        ],
+        "Dakshina Kannada": [
+            "Loamy"
+        ],
+        "Uttara Kannada": [
+            "Loamy"
+        ],
+        "Kodagu / Coorg": [
+            "Loamy"
+        ]
+    },
+    "Tamil Nadu": {
+        "Chengalpattu MGR / Kanchipuram": [
+            "Loamy"
+        ],
+        "South Arcot / Cuddalore": [
+            "Loamy"
+        ],
+        "North Arcot / Vellore": [
+            "Loamy"
+        ],
+        "Salem": [
+            "Loamy"
+        ],
+        "Coimbatore": [
+            "Loamy"
+        ],
+        "Tiruchirapalli / Trichy": [
+            "Loamy"
+        ],
+        "Thanjavur": [
+            "Loamy"
+        ],
+        "Madurai": [
+            "Loamy"
+        ],
+        "Ramananthapuram": [
+            "Loamy"
+        ],
+        "Thirunelveli": [
+            "Loamy"
+        ],
+        "The Nilgiris": [
+            "Loamy"
+        ],
+        "Kanyakumari": [
+            "Loamy"
+        ]
+    },
+    "Maharashtra": {
+        "Thane": [
+            "Loamy"
+        ],
+        "Raigad": [
+            "Loamy"
+        ],
+        "Ratnagiri": [
+            "Loamy"
+        ],
+        "Nasik": [
+            "Loamy"
+        ],
+        "Dhule": [
+            "Loamy"
+        ],
+        "Jalgaon": [
+            "Loamy"
+        ],
+        "Ahmednagar": [
+            "Loamy"
+        ],
+        "Pune": [
+            "Loamy"
+        ],
+        "Satara": [
+            "Loamy"
+        ],
+        "Sangli": [
+            "Loamy"
+        ],
+        "Solapur": [
+            "Loamy"
+        ],
+        "Kolhapur": [
+            "Loamy"
+        ],
+        "Aurangabad": [
+            "Loamy"
+        ],
+        "Parbhani": [
+            "Loamy"
+        ],
+        "Beed": [
+            "Loamy"
+        ],
+        "Nanded": [
+            "Loamy"
+        ],
+        "Osmanabad": [
+            "Loamy"
+        ],
+        "Buldhana": [
+            "Loamy"
+        ],
+        "Akola": [
+            "Loamy"
+        ],
+        "Amarawati": [
+            "Loamy"
+        ],
+        "Yeotmal": [
+            "Loamy"
+        ],
+        "Nagpur": [
+            "Loamy"
+        ],
+        "Bhandara": [
+            "Loamy"
+        ],
+        "Chandrapur": [
+            "Loamy"
+        ],
+        "Wardha": [
+            "Loamy"
+        ]
+    },
+    "Gujarat": {
+        "Ahmedabad": [
+            "Sandy"
+        ],
+        "Banaskantha": [
+            "Sandy"
+        ],
+        "Bharuch": [
+            "Sandy"
+        ],
+        "Vadodara / Baroda": [
+            "Sandy"
+        ],
+        "Valsad": [
+            "Sandy"
+        ],
+        "Dangs": [
+            "Sandy"
+        ],
+        "Junagadh": [
+            "Sandy"
+        ],
+        "Kheda": [
+            "Sandy"
+        ],
+        "Mehsana": [
+            "Sandy"
+        ],
+        "Panchmahal": [
+            "Sandy"
+        ],
+        "Sabarkantha": [
+            "Sandy"
+        ],
+        "Surat": [
+            "Sandy"
+        ],
+        "Surendranagar": [
+            "Sandy"
+        ],
+        "Amreli": [
+            "Sandy"
+        ],
+        "Bhavnagar": [
+            "Sandy"
+        ],
+        "Jamnagar": [
+            "Sandy"
+        ],
+        "Kutch": [
+            "Sandy"
+        ],
+        "Rajkot": [
+            "Sandy"
+        ]
+    },
+    "Rajasthan": {
+        "Ajmer": [
+            "Loamy"
+        ],
+        "Alwar": [
+            "Loamy"
+        ],
+        "Banswara": [
+            "Loamy"
+        ],
+        "Bharatpur": [
+            "Loamy"
+        ],
+        "Bhilwara": [
+            "Loamy"
+        ],
+        "Bikaner": [
+            "Loamy"
+        ],
+        "Bundi": [
+            "Loamy"
+        ],
+        "Chittorgarh": [
+            "Loamy"
+        ],
+        "Dungarpur": [
+            "Loamy"
+        ],
+        "Ganganagar": [
+            "Loamy"
+        ],
+        "Jhalawar": [
+            "Loamy"
+        ],
+        "Kota": [
+            "Loamy"
+        ],
+        "Swami Madhopur": [
+            "Loamy"
+        ],
+        "Sirohi": [
+            "Loamy"
+        ],
+        "Tonk": [
+            "Loamy"
+        ],
+        "Udaipur": [
+            "Loamy"
+        ],
+        "Barmer": [
+            "Loamy"
+        ],
+        "Churu": [
+            "Loamy"
+        ],
+        "Jaipur": [
+            "Loamy"
+        ],
+        "Jaisalmer": [
+            "Loamy"
+        ],
+        "Jalore": [
+            "Loamy"
+        ],
+        "Jhunjhunu": [
+            "Loamy"
+        ],
+        "Jodhpur": [
+            "Loamy"
+        ],
+        "Nagaur": [
+            "Loamy"
+        ],
+        "Pali": [
+            "Loamy"
+        ],
+        "Sikar": [
+            "Loamy"
+        ]
+    },
+    "Punjab": {
+        "Gurdaspur": [
+            "Loamy"
+        ],
+        "Amritsar": [
+            "Loamy"
+        ],
+        "Kapurthala": [
+            "Loamy"
+        ],
+        "Jalandhar": [
+            "Loamy"
+        ],
+        "Hoshiarpur": [
+            "Loamy"
+        ],
+        "Roopnagar / Ropar": [
+            "Loamy"
+        ],
+        "Ludhiana": [
+            "Loamy"
+        ],
+        "Ferozpur": [
+            "Loamy"
+        ],
+        "Bhatinda": [
+            "Loamy"
+        ],
+        "Sangrur": [
+            "Loamy"
+        ],
+        "Patiala": [
+            "Loamy"
+        ]
+    },
+    "Haryana": {
+        "Hissar": [
+            "Loamy"
+        ],
+        "Gurgaon": [
+            "Loamy"
+        ],
+        "Jind": [
+            "Loamy"
+        ],
+        "Mahendragarh / Narnaul": [
+            "Loamy"
+        ],
+        "Ambala": [
+            "Loamy"
+        ],
+        "Karnal": [
+            "Loamy"
+        ],
+        "Rohtak": [
+            "Loamy"
+        ]
+    },
+    "Uttar Pradesh": {
+        "Saharanpur": [
+            "Alluvial"
+        ],
+        "Muzaffarnagar": [
+            "Alluvial"
+        ],
+        "Meerut": [
+            "Alluvial"
+        ],
+        "Buland Shahar": [
+            "Alluvial"
+        ],
+        "Aligarh": [
+            "Alluvial"
+        ],
+        "Mathura": [
+            "Alluvial"
+        ],
+        "Agra": [
+            "Alluvial"
+        ],
+        "Mainpuri": [
+            "Alluvial"
+        ],
+        "Etah": [
+            "Alluvial"
+        ],
+        "Bareilly": [
+            "Alluvial"
+        ],
+        "Budaun": [
+            "Alluvial"
+        ],
+        "Moradabad": [
+            "Alluvial"
+        ],
+        "Shahjahanpur": [
+            "Alluvial"
+        ],
+        "Pilibhit": [
+            "Alluvial"
+        ],
+        "Rampur": [
+            "Alluvial"
+        ],
+        "Bijnor": [
+            "Alluvial"
+        ],
+        "Farrukhabad": [
+            "Alluvial"
+        ],
+        "Etawah": [
+            "Alluvial"
+        ],
+        "Kanpur": [
+            "Alluvial"
+        ],
+        "Fatehpur": [
+            "Alluvial"
+        ],
+        "Allahabad": [
+            "Alluvial"
+        ],
+        "Jhansi": [
+            "Alluvial"
+        ],
+        "Jalaun": [
+            "Alluvial"
+        ],
+        "Hamirpur": [
+            "Alluvial"
+        ],
+        "Banda": [
+            "Alluvial"
+        ],
+        "Varanasi": [
+            "Alluvial"
+        ],
+        "Mirzpur": [
+            "Alluvial"
+        ],
+        "Jaunpur": [
+            "Alluvial"
+        ],
+        "Ghazipur": [
+            "Alluvial"
+        ],
+        "Ballia": [
+            "Alluvial"
+        ],
+        "Gorakhpur": [
+            "Alluvial"
+        ],
+        "Deoria": [
+            "Alluvial"
+        ],
+        "Basti": [
+            "Alluvial"
+        ],
+        "Azamgarh": [
+            "Alluvial"
+        ],
+        "Lucknow": [
+            "Alluvial"
+        ],
+        "Unnao": [
+            "Alluvial"
+        ],
+        "Rae-Bareily": [
+            "Alluvial"
+        ],
+        "Sitapur": [
+            "Alluvial"
+        ],
+        "Hardoi": [
+            "Alluvial"
+        ],
+        "Kheri": [
+            "Alluvial"
+        ],
+        "Faizabad": [
+            "Alluvial"
+        ],
+        "Gonda": [
+            "Alluvial"
+        ],
+        "Bahraich": [
+            "Alluvial"
+        ],
+        "Sultanpur": [
+            "Alluvial"
+        ],
+        "Pratapgarh": [
+            "Alluvial"
+        ],
+        "Barabanki": [
+            "Alluvial"
+        ]
+    },
+    "Uttarakhand": {
+        "Nainital": [
+            "Loamy"
+        ],
+        "Almorah": [
+            "Loamy"
+        ],
+        "Pithorgarh": [
+            "Loamy"
+        ],
+        "Chamoli": [
+            "Loamy"
+        ],
+        "Uttar Kashi": [
+            "Loamy"
+        ],
+        "Tehri Garhwal": [
+            "Loamy"
+        ],
+        "Garhwal": [
+            "Loamy"
+        ],
+        "Dehradun": [
+            "Loamy"
+        ]
+    },
+    "Assam": {
+        "Cachar": [
+            "Loamy"
+        ],
+        "Darrang": [
+            "Loamy"
+        ],
+        "Dibrugarh": [
+            "Loamy"
+        ],
+        "Goalpara": [
+            "Loamy"
+        ],
+        "Kamrup": [
+            "Loamy"
+        ],
+        "Karbi Anglong": [
+            "Loamy"
+        ],
+        "Lakhimpur": [
+            "Loamy"
+        ],
+        "North Cachar Hil / Dima hasao": [
+            "Loamy"
+        ],
+        "Nagaon": [
+            "Loamy"
+        ],
+        "Sibsagar": [
+            "Loamy"
+        ]
+    },
+    "Himachal Pradesh": {
+        "Bilashpur": [
+            "Loamy"
+        ],
+        "Chamba": [
+            "Loamy"
+        ],
+        "Kangra": [
+            "Loamy"
+        ],
+        "Kinnaur": [
+            "Loamy"
+        ],
+        "Kullu": [
+            "Loamy"
+        ],
+        "Solan": [
+            "Loamy"
+        ],
+        "Mandi": [
+            "Loamy"
+        ],
+        "Shimla": [
+            "Loamy"
+        ],
+        "Sirmaur": [
+            "Loamy"
+        ],
+        "Lahul & Spiti": [
+            "Loamy"
+        ]
+    },
+    "Kerala": {
+        "Alappuzha": [
+            "Loamy"
+        ],
+        "Kannur": [
+            "Loamy"
+        ],
+        "Eranakulam": [
+            "Loamy"
+        ],
+        "Kottayam": [
+            "Loamy"
+        ],
+        "Kozhikode": [
+            "Loamy"
+        ],
+        "Malappuram": [
+            "Loamy"
+        ],
+        "Palakkad": [
+            "Loamy"
+        ],
+        "Kollam": [
+            "Loamy"
+        ],
+        "Thrissur": [
+            "Loamy"
+        ],
+        "Thiruvananthapuram": [
+            "Loamy"
+        ]
+    },
+    "Orissa": {
+        "Balasore": [
+            "Red"
+        ],
+        "Bolangir": [
+            "Red"
+        ],
+        "Cuttack": [
+            "Red"
+        ],
+        "Dhenkanal": [
+            "Red"
+        ],
+        "Ganjam": [
+            "Red"
+        ],
+        "Kalahandi": [
+            "Red"
+        ],
+        "Keonjhar": [
+            "Red"
+        ],
+        "Koraput": [
+            "Red"
+        ],
+        "Mayurbhanja": [
+            "Red"
+        ],
+        "Phulbani ( Kandhamal )": [
+            "Red"
+        ],
+        "Puri": [
+            "Red"
+        ],
+        "Sambalpur": [
+            "Red"
+        ],
+        "Sundargarh": [
+            "Red"
+        ]
+    },
+    "West Bengal": {
+        "24 Parganas": [
+            "Alluvial"
+        ],
+        "Nadia": [
+            "Alluvial"
+        ],
+        "Murshidabad": [
+            "Alluvial"
+        ],
+        "Burdwan": [
+            "Alluvial"
+        ],
+        "Birbhum": [
+            "Alluvial"
+        ],
+        "Bankura": [
+            "Alluvial"
+        ],
+        "Hooghly": [
+            "Alluvial"
+        ],
+        "Howrah": [
+            "Alluvial"
+        ],
+        "Jalpaiguri": [
+            "Alluvial"
+        ],
+        "Darjeeling": [
+            "Alluvial"
+        ],
+        "Malda": [
+            "Alluvial"
+        ],
+        "Cooch Behar": [
+            "Alluvial"
+        ],
+        "Purulia": [
+            "Alluvial"
+        ],
+        "Midnapur": [
+            "Alluvial"
+        ],
+        "West Dinajpur": [
+            "Alluvial"
+        ]
+    },
+    "Bihar": {
+        "Champaran": [
+            "Alluvial"
+        ],
+        "Muzaffarpur": [
+            "Alluvial"
+        ],
+        "Darbhanga": [
+            "Alluvial"
+        ],
+        "Saharsa": [
+            "Alluvial"
+        ],
+        "Purnea": [
+            "Alluvial"
+        ],
+        "Saran": [
+            "Alluvial"
+        ],
+        "Patna": [
+            "Alluvial"
+        ],
+        "Mungair": [
+            "Alluvial"
+        ],
+        "Bhagalpur": [
+            "Alluvial"
+        ],
+        "Shahabad (now part of Bhojpur district)": [
+            "Alluvial"
+        ],
+        "Gaya": [
+            "Alluvial"
+        ]
+    },
+    "Jharkhand": {
+        "Santhal Paragana / Dumka": [
+            "Red"
+        ],
+        "Hazaribagh": [
+            "Red"
+        ],
+        "Dhanbad": [
+            "Red"
+        ],
+        "Palamau": [
+            "Red"
+        ],
+        "Ranchi": [
+            "Red"
+        ],
+        "Singhbhum": [
+            "Red"
+        ]
+    }
+}
