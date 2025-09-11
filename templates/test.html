@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test Page - Crop Yield & Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 300px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+        .error {
+            border-left-color: #f44336;
+            background-color: #ffebee;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            padding: 10px 20px;
+            background: #ddd;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+            border-radius: 4px 4px 0 0;
+        }
+        .tab-button.active {
+            background: white;
+            border-bottom: 2px solid #4CAF50;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .image-preview {
+            max-width: 300px;
+            max-height: 300px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Test Page</h1>
+    <p>Test both Crop Yield Prediction and Disease Prediction APIs</p>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('yield')">Yield Prediction</button>
+        <button class="tab-button" onclick="showTab('disease')">Disease Prediction</button>
+        <button class="tab-button" onclick="showTab('health')">Health Check</button>
+    </div>
+
+    <!-- Yield Prediction Tab -->
+    <div id="yield" class="tab-content active">
+        <div class="container">
+            <h2>Crop Yield Prediction Test</h2>
+            <form id="yieldForm">
+                <input type="number" name="Year" placeholder="Year (e.g., 2024)" required><br>
+                <select name="State" required>
+                    <option value="">Select State</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Gujarat">Gujarat</option>
+                </select><br>
+                <input type="text" name="District" placeholder="District" required><br>
+                <input type="number" step="0.01" name="Area_1000_ha" placeholder="Area (1000 ha)" required><br>
+                <select name="Crop" required>
+                    <option value="">Select Crop</option>
+                    <option value="RICE">RICE</option>
+                    <option value="GROUNDNUT">GROUNDNUT</option>
+                    <option value="WHEAT">WHEAT</option>
+                    <option value="MAIZE">MAIZE</option>
+                    <option value="SUGARCANE">SUGARCANE</option>
+                </select><br>
+                <input type="number" step="0.01" name="Avg_Rainfall_mm" placeholder="Average Rainfall (mm)" required><br>
+                <input type="number" step="0.01" name="Avg_Temp_C" placeholder="Average Temperature (°C)" required><br>
+                <select name="Soil_Type" required>
+                    <option value="">Select Soil Type</option>
+                    <option value="Sandy">Sandy</option>
+                    <option value="Alluvial">Alluvial</option>
+                    <option value="Black">Black</option>
+                    <option value="Red-Yellow">Red-Yellow</option>
+                    <option value="Red">Red</option>
+                    <option value="Loamy">Loamy</option>
+                </select><br>
+                <button type="submit">Predict Yield</button>
+            </form>
+            <div id="yieldResult" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Disease Prediction Tab -->
+    <div id="disease" class="tab-content">
+        <div class="container">
+            <h2>Crop Disease Prediction Test</h2>
+            <form id="diseaseForm" enctype="multipart/form-data">
+                <input type="file" id="imageInput" name="image" accept=".jpg,.jpeg,.png" required><br>
+                <img id="imagePreview" class="image-preview" style="display: none;" alt="Image Preview"><br>
+                <button type="submit">Predict Disease</button>
+            </form>
+            <div id="diseaseResult" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Health Check Tab -->
+    <div id="health" class="tab-content">
+        <div class="container">
+            <h2>API Health Check</h2>
+            <button onclick="checkHealth()">Check API Health</button>
+            <div id="healthResult" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Image preview functionality
+        document.getElementById('imageInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('imagePreview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Yield prediction form handler
+        document.getElementById('yieldForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = Object.fromEntries(new FormData(e.target));
+
+            // Convert numeric fields
+            formData.Year = parseInt(formData.Year);
+            formData.Area_1000_ha = parseFloat(formData.Area_1000_ha);
+            formData.Avg_Rainfall_mm = parseFloat(formData.Avg_Rainfall_mm);
+            formData.Avg_Temp_C = parseFloat(formData.Avg_Temp_C);
+
+            const resultDiv = document.getElementById('yieldResult');
+            resultDiv.style.display = 'block';
+            resultDiv.classList.remove('error');
+            resultDiv.innerHTML = '<p>Processing...</p>';
+
+            try {
+                const response = await fetch('http://127.0.0.1:5000/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.error) {
+                    resultDiv.classList.add('error');
+                    resultDiv.innerHTML = `<h3>Error:</h3><p>${result.error}</p>`;
+                } else {
+                    let html = '<h3>Prediction Results:</h3>';
+
+                    if (result.yield_kg_ha !== null) {
+                        html += `<p><strong>Predicted Yield:</strong> ${result.yield_kg_ha} kg/ha</p>`;
+                        html += `<p><strong>Confidence Interval (95%):</strong> ${result.confidence_interval_95[0]} - ${result.confidence_interval_95[1]} kg/ha</p>`;
+                    }
+
+                    if (result.recommendations && result.recommendations.length > 0) {
+                        html += '<p><strong>Recommendations:</strong></p><ul>';
+                        result.recommendations.forEach(rec => {
+                            html += `<li>${rec}</li>`;
+                        });
+                        html += '</ul>';
+                    }
+
+                    if (result.message) {
+                        html += `<p><strong>Message:</strong> ${result.message}</p>`;
+                    }
+
+                    resultDiv.innerHTML = html;
+                }
+            } catch (error) {
+                resultDiv.classList.add('error');
+                resultDiv.innerHTML = `<h3>Error:</h3><p>Failed to connect to API: ${error.message}</p>`;
+            }
+        });
+
+        // Disease prediction form handler
+        document.getElementById('diseaseForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+
+            const resultDiv = document.getElementById('diseaseResult');
+            resultDiv.style.display = 'block';
+            resultDiv.classList.remove('error');
+            resultDiv.innerHTML = '<p>Processing...</p>';
+
+            try {
+                const response = await fetch('http://127.0.0.1:5000/predict-disease', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.error) {
+                    resultDiv.classList.add('error');
+                    resultDiv.innerHTML = `<h3>Error:</h3><p>${result.error}</p>`;
+                } else {
+                    let html = '<h3>Disease Prediction Results:</h3>';
+                    html += `<p><strong>Crop:</strong> ${result.crop}</p>`;
+                    html += `<p><strong>Status:</strong> ${result.status}</p>`;
+                    html += `<p><strong>Confidence:</strong> ${(result.confidence * 100).toFixed(2)}%</p>`;
+
+                    if (result.uploaded_image_url) {
+                        html += `<p><strong>Uploaded Image:</strong> <a href="${result.uploaded_image_url}" target="_blank">View</a></p>`;
+                    }
+
+                    if (result.predicted_image_url) {
+                        html += `<p><strong>Annotated Image:</strong> <a href="${result.predicted_image_url}" target="_blank">View</a></p>`;
+                    }
+
+                    resultDiv.innerHTML = html;
+                }
+            } catch (error) {
+                resultDiv.classList.add('error');
+                resultDiv.innerHTML = `<h3>Error:</h3><p>Failed to connect to API: ${error.message}</p>`;
+            }
+        });
+
+        // Health check function
+        async function checkHealth() {
+            const resultDiv = document.getElementById('healthResult');
+            resultDiv.style.display = 'block';
+            resultDiv.classList.remove('error');
+            resultDiv.innerHTML = '<p>Checking API health...</p>';
+
+            try {
+                const response = await fetch('http://127.0.0.1:5000/health');
+                const result = await response.json();
+
+                let html = '<h3>API Health Status:</h3>';
+                html += `<p><strong>Status:</strong> ${result.status}</p>`;
+                html += `<p><strong>Yield Model:</strong> ${result.yield_model}</p>`;
+                html += `<p><strong>Disease Model:</strong> ${result.disease_model}</p>`;
+
+                resultDiv.innerHTML = html;
+            } catch (error) {
+                resultDiv.classList.add('error');
+                resultDiv.innerHTML = `<h3>Error:</h3><p>Failed to connect to API: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
