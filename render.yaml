@@ -1,6 +1,6 @@
 version: 2
 build:
   commands:
-    - pip install -r requirements.txt
+    - pip install -r requirements_basic.txt
 start:
-  command: gunicorn app:app --host 0.0.0.0 --port $PORT
+  command: gunicorn app_basic:app --host 0.0.0.0 --port $PORT
